@@ -1,0 +1,30 @@
+pkg update && pkg upgrade -y
+pkg install proot-distro wget curl nano -y
+
+proot-distro install ubuntu
+proot-distro login ubuntu
+
+apt update && apt upgrade -y
+apt install openjdk-21-jdk wget screen nano -y
+
+java -version
+
+wget https://api.papermc.io/v2/projects/paper/versions/1.20.4/builds/386/downloads/paper-1.20.4-386.jar -O server.jar
+
+
+nano eula.txt
+
+For Starting Server
+java -Xmx512M -Xms512M -jar server.jar nogui
+
+For Bedrock Edition
+
+mkdir plugins
+cd plugins
+
+wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot -O Geyser.jar
+
+wget https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot -O Floodgate.jar
+
+cd ..
+java -Xmx512M -Xms512M -jar server.jar nogui
