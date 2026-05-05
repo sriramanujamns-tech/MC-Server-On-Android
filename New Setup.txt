@@ -22,9 +22,9 @@ nano eula.txt(eula=true)
 For Set up Play It.gg
 cd ~
 
-wget https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
+wget https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-aarch64
 
-chmod +x playit-linux-amd64
+chmod +x playit-linux-aarch64
 
 ./playit-linux-amd64
 
