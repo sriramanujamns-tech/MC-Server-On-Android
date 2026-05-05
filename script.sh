@@ -15,7 +15,7 @@ proot-distro login ubuntu -- bash -c "
     apt install wget curl zip -y
 
     # FIXED JAVA VERSION
-    apt install openjdk-17-jdk -y
+    apt install openjdk-21-jdk -y
 
     wget -O setupServer.sh https://raw.githubusercontent.com/sriramanujamns-tech/MC-Server-On-Android/refs/heads/main/SetupMCserver.sh
     wget -O setupPlayit.sh https://raw.githubusercontent.com/sriramanujamns-tech/MC-Server-On-Android/refs/heads/main/setupPlayit.sh
