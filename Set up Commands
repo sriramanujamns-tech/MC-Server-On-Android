@@ -1,0 +1,44 @@
+#Setting up minecraft server in mobile phone using Termux
+
+#Download and Install Termux from From F-Droid or Github
+#NOTE: DO NOT DOWNLOAD TERMUX FROM PLAYSTORE AS IT HAS OLDER VERSION AND DOESNT WORK
+
+
+#Start here
+
+#Setting up ubuntu and java 25
+pkg install wget -y
+wget https://raw.githubusercontent.com/NoonGamez/SetupMCServerOnMobile/refs/heads/main/script.sh
+ls
+chmod +x script.sh
+./script.sh
+
+#IMPORTANT# Create and verify account in Playit.gg website #IMPORTANT#
+
+#Setup Playit
+ls
+./setupPlayit.sh
+
+#Create and start Minecraft Server
+#Open new Session
+proot-distro login ubuntu
+ls
+./setupServer.sh
+
+#All Done
+
+----------------------------------------------------------------------------------------------------------------|
+
+#How to start server again if you exit and close Termux Sessions
+proot-distro login ubuntu
+ls
+./playit-linux-aarch64
+
+#open new session for Minecraft Server
+proot-distro login ubuntu
+ls
+cd mcserver
+ls
+./start.sh
+
+#All done now the server will automatically connect and start
