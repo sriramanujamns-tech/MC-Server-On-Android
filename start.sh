@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Starting Ubuntu + Server + Playit..."
+echo "🚀 Starting everything..."
 
 proot-distro login ubuntu -- bash -c "
 cd ~ || exit
@@ -12,4 +12,7 @@ sleep 5
 screen -dmS playit ./playit-linux-aarch64
 "
 
-echo "✅ Everything started!"
+# Start watchdog in Termux
+screen -dmS watchdog ./watchdog.sh
+
+echo "✅ Server + Playit + Auto-restart running!"
