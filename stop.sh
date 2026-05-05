@@ -13,6 +13,9 @@ if [[ "$confirm" == "y" || "$confirm" == "Y" ]]; then
     pkill java
     "
 
+    echo "🛡️ Stopping watchdog..."
+    pkill -f watchdog.sh
+
     echo "📴 Closing Ubuntu..."
     pkill -f proot
 
