@@ -28,8 +28,15 @@ chmod +x playit-linux-aarch64
 
 ./playit-linux-aarch64
 
-For Starting Server:
-java -Xmx512M -Xms512M -jar server.jar nogui
+Download This For Starting And Stoping File To Store In Local
+wget https://raw.githubusercontent.com/yourname/repo/main/start.sh
+wget https://raw.githubusercontent.com/yourname/repo/main/stop.sh
+
+chmod +x start.sh stop.sh
+
+For Start And Stop Server
+./start.sh
+./stop.sh
 
 For Bedrock Edition
 
@@ -41,4 +48,3 @@ wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/lat
 wget https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot -O Floodgate.jar
 
 cd ..
-java -Xmx512M -Xms512M -jar server.jar nogui
