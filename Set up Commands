@@ -3,15 +3,13 @@
 #Download and Install Termux from From F-Droid or Github
 #NOTE: DO NOT DOWNLOAD TERMUX FROM PLAYSTORE AS IT HAS OLDER VERSION AND DOESNT WORK
 
-
-#Start here
-
 #Setting up ubuntu and java 25
 pkg install wget -y
 wget https://raw.githubusercontent.com/NoonGamez/SetupMCServerOnMobile/refs/heads/main/script.sh
 ls
 chmod +x script.sh
 ./script.sh
+#you will have to press "y" and enter if it asks anything
 
 #IMPORTANT# Create and verify account in Playit.gg website #IMPORTANT#
 
@@ -19,13 +17,19 @@ chmod +x script.sh
 ls
 ./setupPlayit.sh
 
+#Copy your link and paste it in browser
+#Creating Tunnel
+#Copy server ip from playit.gg website
+
 #Create and start Minecraft Server
 #Open new Session
 proot-distro login ubuntu
 ls
 ./setupServer.sh
-
-#All Done
+#press 'y' and Enter for eula
+#press 'y' for cracked(Tlauncher players can join) or 'n' for not-cracked server
+#wait till server starts
+#Paste your server ip from playit.gg website and be able to join the server from anywhere in the world
 
 ----------------------------------------------------------------------------------------------------------------|
 
