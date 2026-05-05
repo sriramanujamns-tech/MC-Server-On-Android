@@ -3,6 +3,11 @@
 #Download and Install Termux from From F-Droid or Github
 #NOTE: DO NOT DOWNLOAD TERMUX FROM PLAYSTORE AS IT HAS OLDER VERSION AND DOESNT WORK
 
+If You Downloaded From Play Store First Execute This Commands
+pkg update && pkg upgrade -y
+pkg uninstall wget -y
+pkg install wget -y
+
 #Setting up ubuntu and java 25
 pkg install wget -y
 wget https://raw.githubusercontent.com/sriramanujamns-tech/MC-Server-On-Android/refs/heads/main/script.sh
