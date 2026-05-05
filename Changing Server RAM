@@ -1,0 +1,22 @@
+#How to change Minecraft server RAM
+
+#stop running server
+stop
+
+#changing RAM
+ls
+nano start.sh
+#change -Xmx1024M to how much RAM you want the server to have
+#Note server RAM should be lesser than total RAM on mobile
+#example if you have 4GB RAM Phone you can at max 
+#allocate 2GB RAM without riskPhone crashing
+#RAM Numbers
+#2GB - 2048M
+#4GB - 4096M
+#6GB - 6144M
+#8GB - 8192M
+
+#"ctrl + o" , "enter" , "ctrl + x"
+
+#start server again
+./start.sh
