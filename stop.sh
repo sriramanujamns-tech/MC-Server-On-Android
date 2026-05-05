@@ -1,18 +1,23 @@
 #!/bin/bash
 
-echo "🛑 Stopping everything..."
+echo "⚠️ Are you sure you want to stop everything and exit Termux? (y/n)"
+read confirm
 
-proot-distro login ubuntu -- bash -c "
-# Stop Minecraft server safely
-screen -S server -X stuff 'stop\n'
+if [[ "$confirm" == "y" || "$confirm" == "Y" ]]; then
+    echo "🛑 Stopping server and Playit..."
 
-sleep 5
+    proot-distro login ubuntu -- bash -c "
+    screen -S server -X stuff 'stop\n'
+    sleep 5
+    pkill playit
+    pkill java
+    "
 
-# Kill Playit
-pkill playit
+    echo "📴 Closing Ubuntu..."
+    pkill -f proot
 
-# Kill any leftover Java processes (safety)
-pkill java
-"
-
-echo "✅ Server + Playit stopped!"
+    echo "👋 Exiting Termux..."
+    exit
+else
+    echo "❌ Cancelled"
+fi
