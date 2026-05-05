@@ -29,8 +29,8 @@ chmod +x playit-linux-aarch64
 ./playit-linux-aarch64
 
 Download This For Starting And Stoping File To Store In Local
-wget https://raw.githubusercontent.com/yourname/repo/main/start.sh
-wget https://raw.githubusercontent.com/yourname/repo/main/stop.sh
+wget https://raw.githubusercontent.com/sriramanujamns-tech/MC-Server-On-Android/refs/heads/main/start.sh
+wget https://raw.githubusercontent.com/sriramanujamns-tech/MC-Server-On-Android/refs/heads/main/stop.sh
 
 chmod +x start.sh stop.sh
 
