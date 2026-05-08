@@ -28,6 +28,14 @@ chmod +x playit-linux-aarch64
 
 ./playit-linux-aarch64
 
+Starting Server:
+Low Spec Phone:
+java -Xms64M -Xmx192M -XX:+UseG1GC -jar server.jar nogui
+Medium Spec Phone:
+java -Xms256M -Xmx768M -XX:+UseG1GC -jar server.jar nogui
+High Spec Phone:
+java -Xms512M -Xmx1536M -XX:+UseG1GC -jar server.jar nogui
+
 Download This For Starting And Stoping File To Store In Local
 wget https://raw.githubusercontent.com/sriramanujamns-tech/MC-Server-On-Android/refs/heads/main/start.sh
 wget https://raw.githubusercontent.com/sriramanujamns-tech/MC-Server-On-Android/refs/heads/main/stop.sh
